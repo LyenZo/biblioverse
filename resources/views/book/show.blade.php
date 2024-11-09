@@ -6,7 +6,7 @@ Libro #{{$book->id}}
 
 @section('content')
 @include('sweetalert::alert')
-<a href="/libro">Volver a CRUD</a>
+<button class="boton_2"><a href="/libro" class="acciones">Volver a CRUD</a></button>
 <br>
 <h1>Información del libro</h1>
 <h2>Id: {{$book->id}}</h2>

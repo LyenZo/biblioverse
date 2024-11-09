@@ -35,10 +35,10 @@
                     <h3>{{$review->score}}</h3>
                 </td>
                 <td>
-                    <button class="btn btn-primary"><a href="/reseña/{{$review->id}}">MOSTRAR</a></button>
+                    <button class="btn btn-primary"><a href="/reseña/{{$review->id}}" class="acciones">MOSTRAR</a></button>
                 </td>
                 <td>
-                    <button class="btn btn-primary"><a href="/reseña/{{$review->id}}/editar">EDITAR</a></button>
+                    <button class="btn btn-primary"><a href="/reseña/{{$review->id}}/editar" class="acciones">EDITAR</a></button>
                 </td>
                 <td>
                     <form action="/reseña/{{$review->id}}" method="post">

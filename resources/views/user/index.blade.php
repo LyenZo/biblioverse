@@ -14,6 +14,7 @@
         <th>NOMBRE</th> 
         <th>APELLIDO PATERNO</th>
         <th>APELLIDO MATERNO</th>
+        <th>ROL</th>
         <th>EMAIL</th>
         <th>MOSTRAR</th>
         <th>EDITAR</th>
@@ -36,13 +37,16 @@
                     <h3>{{$user->m_surname}}</h3>
                 </td>
                 <td>
+                    <h3>{{$user->role}}</h3>
+                </td>
+                <td>
                     <h3>{{$user->email}}</h3>
                 </td>
                 <td>
-                    <button class="btn btn-primary"><a href="/usuario/{{$user->id}}">MOSTRAR</a></button>
+                    <button class="btn btn-primary"><a href="/usuario/{{$user->id}}" class="acciones">MOSTRAR</a></button>
                 </td>
                 <td>
-                    <button class="btn btn-primary"><a href="/usuario/{{$user->id}}/editar">EDITAR</a></button>
+                    <button class="btn btn-primary"><a href="/usuario/{{$user->id}}/editar" class="acciones">EDITAR</a></button>
                 </td>
                 <td>
                     <form action="/usuario/{{$user->id}}" method="post">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -32,6 +33,7 @@ class AuthController extends Controller
             'name' => $request->name,
             'p_surname' => $request->p_surname,
             'm_surname' => $request->m_surname,
+            'role' => $request->role,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
@@ -52,7 +54,10 @@ class AuthController extends Controller
         ]);
 
         if (auth()->attempt(['email' => $request->email, 'password' => $request->password])) {
-            return redirect()->route('home')->with('success', 'Login exitoso.');
+            if(Auth::user()->role === 'admin'){
+                return redirect()->route('home')->with('success', 'Login exitoso.');
+            }
+            return redirect()->route('home_2')->with('success', 'Login exitoso.');
         }
 
         return redirect()->back()->withErrors(['email' => 'Credenciales incorrectas.']);
@@ -61,6 +66,6 @@ class AuthController extends Controller
     public function logout()
     {
         auth()->logout();
-        return redirect()->route('login')->with('success', 'Has cerrado sesión.');
+        return redirect()->route('index');
     }
 }

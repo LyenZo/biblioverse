@@ -26,6 +26,7 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->p_surname = $request->p_surname;
         $user->m_surname = $request->m_surname;
+        $user->role = $request->role;
         $user->email = $request->email;
         $user->password = $request->password;
 
@@ -44,6 +45,7 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->p_surname = $request->p_surname;
         $user->m_surname = $request->m_surname;
+        $user->role = $request->role;
         $user->email = $request->email;
         $user->password = $request->password;
 

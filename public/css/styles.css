@@ -1,3 +1,26 @@
 body{
     background-color: rgb(209, 173, 128);
 }
+nav{
+    height: 50px;
+    display: flex;
+    text-align:center;
+    justify-content:right;
+    background-color: brown;
+}
+.acciones{
+    text-decoration: none;
+    color:white;
+}
+.boton{
+    height: 40px;
+    background-color: rgb(209, 173, 128);
+    border-color: white;
+    color:white;
+}
+.boton_2{
+    height: 40px;
+    background-color: brown;
+    border-color: white;
+    color:white;
+}

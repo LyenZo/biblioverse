@@ -9,7 +9,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 class BookController extends Controller
 {
     public function index(){
-        $book=book::paginate(10);
+        $book=book::paginate(5);
         return view('book.index',['books'=>$book]);
     }
 

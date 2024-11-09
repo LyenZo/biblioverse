@@ -35,10 +35,10 @@
                     <h3>{{$book->price}}</h3>
                 </td>
                 <td>
-                    <button class="btn btn-primary"><a href="/libro/{{$book->id}}">MOSTRAR</a></button>
+                    <button class="btn btn-primary"><a href="/libro/{{$book->id}}" class="acciones">MOSTRAR</a></button>
                 </td>
                 <td>
-                    <button class="btn btn-primary"><a href="/libro/{{$book->id}}/editar">EDITAR</a></button>
+                    <button class="btn btn-primary"><a href="/libro/{{$book->id}}/editar" class="acciones">EDITAR</a></button>
                 </td>
                 <td>
                     <form action="/libro/{{$book->id}}" method="post">

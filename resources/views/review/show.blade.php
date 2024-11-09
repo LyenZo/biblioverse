@@ -6,7 +6,7 @@ Reseña #{{$review->id}}
 
 @section('content')
 @include('sweetalert::alert')
-<a href="/reseña">Volver a CRUD</a>
+<button class="boton_2"><a href="/reseña" class="acciones">Volver a CRUD</a></button>
 <br>
 <h1>Información del usuario</h1>
 <h2>Id: {{$review->id}}</h2>

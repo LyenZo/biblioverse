@@ -15,10 +15,15 @@
     <form action="/login" method="POST">
         @csrf
         <label for="email">Correo electrónico:</label>
+        <br>
         <input type="email" name="email" id="email" required>
+        <br>
         <label for="password">Contraseña:</label>
+        <br>
         <input type="password" name="password" id="password" required>
-        <button type="submit">Iniciar Sesión</button>
+        <br>
+        <button type="submit" class="boton_2">Iniciar Sesión</button>
+        <br>
     </form>
 </div>
 @endsection

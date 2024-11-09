@@ -21,6 +21,10 @@
         <input type="text" name="m_surname" value="{{$user->m_surname}}">
     </label>
     <br>
+        Rol: 
+        <input type="text" name="role" value="{{$user->role}}">
+    </label>
+    <br>
         Email: 
         <input type="text" name="email" value="{{$user->email}}">
     </label>

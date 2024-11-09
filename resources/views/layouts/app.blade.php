@@ -10,18 +10,14 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="/login">Iniciar Sesión</a></li>
-            <li><a href="/register">Registrarse</a></li>
+            <button class="boton"><a href="/login" class="acciones">Iniciar Sesión</a></button>
+            <button class="boton"><a href="/register" class="acciones">Registrarse</a></button>
             @if(auth()->check())
-                <li>
                     <form action="/logout" method="POST">
                         @csrf
-                        <button type="submit">Cerrar Sesión</button>
+                        <button type="submit" class="boton">Cerrar Sesión</button>
                     </form>
-                </li>
             @endif
-        </ul>
     </nav>
     @yield('content')
 </body>

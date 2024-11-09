@@ -20,6 +20,10 @@
         <input type="text" name="m_surname" id="m_surname">
     </label>
     <br>
+        Rol:
+        <input type="text" name="role" id="role">
+    </label>
+    <br>
         Email:
         <input type="text" name="email" id="email">
     </label>

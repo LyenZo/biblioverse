@@ -10,8 +10,10 @@
 </head>
 <body>
     <nav>
+            @if(!auth()->check())
             <button class="boton"><a href="/login" class="acciones">Iniciar Sesión</a></button>
             <button class="boton"><a href="/register" class="acciones">Registrarse</a></button>
+            @endif
             @if(auth()->check())
                     <form action="/logout" method="POST">
                         @csrf

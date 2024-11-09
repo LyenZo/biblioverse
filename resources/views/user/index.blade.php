@@ -43,16 +43,16 @@
                     <h3>{{$user->email}}</h3>
                 </td>
                 <td>
-                    <button class="btn btn-primary"><a href="/usuario/{{$user->id}}" class="acciones">MOSTRAR</a></button>
+                    <button class="btn btn-success"><a href="/usuario/{{$user->id}}" class="acciones">MOSTRAR</a></button>
                 </td>
                 <td>
-                    <button class="btn btn-primary"><a href="/usuario/{{$user->id}}/editar" class="acciones">EDITAR</a></button>
+                    <button class="btn btn-warning"><a href="/usuario/{{$user->id}}/editar" class="acciones">EDITAR</a></button>
                 </td>
                 <td>
                     <form action="/usuario/{{$user->id}}" method="post">
                         @csrf
                         @method('DELETE')
-                        <button type='submit' class="btn btn-primary">
+                        <button type='submit' class="btn btn-danger">
                             ELIMINAR
                         </button>
                     </form>

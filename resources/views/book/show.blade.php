@@ -8,11 +8,21 @@ Libro #{{$book->id}}
 @include('sweetalert::alert')
 <button class="boton_2"><a href="/libro" class="acciones">Volver a CRUD</a></button>
 <br>
-<h1>Información del libro</h1>
-<h2>Id: {{$book->id}}</h2>
-<h2>Título:{{$book->title}}</h2>
-<h2>Descripción: {{$book->description}}</h2>
-<h2>Precio: {{$book->price}}</h2>
-<br>
+
+
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>TÍTULO</th>
+        <th>DESCRIPCIÓN</th>
+        <th>PRECIO</th>
+    </tr>
+    <tr>
+        <td>{{$book->id}}</td>
+        <td>{{$book->title}}</td>
+        <td>{{$book->description}}</td>
+        <td>{{$book->price}}</td>
+    </tr>
+</table>
 
 @endsection

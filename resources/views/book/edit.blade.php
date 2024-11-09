@@ -22,7 +22,7 @@
     </label>
     <br>
     <button type="submit">
-        Actualizar usuario
+        Actualizar libro
     </button>
 </form>
 @endsection
